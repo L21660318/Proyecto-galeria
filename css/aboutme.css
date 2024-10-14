@@ -1,0 +1,235 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    color: #ff0f7b;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 20px;
+    color: #666;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-photo {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    border: 5px solid #ff0f7b;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-photo img:hover {
+    transform: scale(1.05);
+}
+
+.about-description {
+    flex: 1 1 55%;
+    background: linear-gradient(135deg, #ff0f7b, #f89b29);
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-description p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.btn-projects {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #fff;
+    color: #ff0f7b;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-projects:hover {
+    background-color: #ff0f7b;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-description {
+        padding: 20px;
+    }
+
+    .about-header h1 {
+        font-size: 28px;
+    }
+}
+
+.bg {
+    background: linear-gradient(135deg, #ff0f7b, #f89b29);
+    border-radius: 13px;
+    display: flex;
+    /* Asegura que el fondo también utilice flexbox */
+    justify-content: center;
+    /* Centra los elementos dentro de .bg */
+    padding: 1rem;
+    /* Espaciado alrededor del contenido */
+    margin-top: 23px;
+}
+
+.cards {
+    display: flex;
+    height: 70px;
+    width: 350px;
+    justify-content: center;
+    /* Centra los enlaces dentro de .cards */
+    align-items: center;
+    /* Centra los enlaces verticalmente */
+}
+
+.cards svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.cards .social-link1,
+.cards .social-link2,
+.cards .social-link3,
+.cards .social-link4,
+.cards .social-link5,
+.cards .social-link6 {
+    /* Asegúrate de incluir link6 aquí */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+    height: 100%;
+    /* Asegura que todos tengan la misma altura */
+}
+
+.cards svg {
+    transform: scale(1);
+}
+
+.cards .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    animation: bounce_613 0.4s linear;
+}
+
+.cards .social-link2:hover {
+    background-color: #242c34;
+    animation: bounce_613 0.4s linear;
+}
+
+.cards .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.cards .social-link4:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+}
+
+.cards .social-link5:hover {
+    background-color: #4267B2;
+    /* Color de Facebook */
+    animation: bounce_613 0.4s linear;
+    /* Efecto de animación */
+}
+
+.cards .social-link6:hover {
+    background-color: #FF0000;
+    /* Color de YouTube */
+    animation: bounce_613 0.4s linear;
+    /* Efecto de animación */
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

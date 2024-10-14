@@ -1,0 +1,191 @@
+/* Estilo del fondo general */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url(../img/bg1.jpg);
+  /* Necesario para el pseudo-elemento */
+  /* Oculta el desbordamiento */
+}
+
+/* Estrellas */
+body::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><circle cx="50" cy="50" r="1" fill="%23FFFFFF" opacity="0.8"/><circle cx="200" cy="150" r="2" fill="%23FFFFFF" opacity="0.6"/><circle cx="350" cy="100" r="1" fill="%23FFFFFF" opacity="0.8"/><circle cx="400" cy="300" r="1.5" fill="%23FFFFFF" opacity="0.7"/><circle cx="600" cy="200" r="2" fill="%23FFFFFF" opacity="0.6"/><circle cx="700" cy="450" r="1" fill="%23FFFFFF" opacity="0.8"/><circle cx="500" cy="400" r="1.5" fill="%23FFFFFF" opacity="0.5"/><circle cx="100" cy="500" r="1" fill="%23FFFFFF" opacity="0.6"/><circle cx="800" cy="300" r="2" fill="%23FFFFFF" opacity="0.7"/></svg>') repeat center center;
+  /* Cambié 'repeat' a 'no-repeat' y añadí 'center center' */
+  z-index: -1;
+}
+
+/* Efecto de nebulosa */
+.nebula {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 0, 204, 0.2) 0%, rgba(0, 0, 0, 0.5) 70%);
+  /* Ajusté la opacidad del color */
+  pointer-events: none;
+  z-index: -1;
+}
+
+.text-center{
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Asegúrate de que el ancho y alto se calculen de forma correcta */
+}
+/* Secciones */
+.info-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo blanco semitransparente */
+  backdrop-filter: blur(10px);
+  /* Efecto vidrio */
+  padding: 40px;
+  /* Mayor espaciado interno */
+  margin: 20px auto;
+  max-width: 1200px;
+  /* Ancho máximo ajustado */
+  border-radius: 20px;
+  /* Bordes más suaves */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  /* Sombra más suave */
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  /* Fuente más moderna */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  /* Animaciones */
+}
+
+.info-container:hover {
+  transform: scale(1.02);
+  /* Ligeramente más grande al pasar el cursor */
+  opacity: 0.95;
+  /* Sutil transparencia al pasar el mouse */
+}
+
+.info-container h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  /* Tamaño de título más grande */
+  color: #222;
+  /* Color más oscuro para mejor contraste */
+  letter-spacing: 1.2px;
+  /* Espaciado entre letras */
+  text-transform: uppercase;
+  /* Mayúsculas para dar un toque elegante */
+}
+
+.info-container p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 1000px;
+  /* Limitar el ancho del texto */
+  margin: 0 auto;
+  /* Centrar el párrafo */
+  letter-spacing: 0.5px;
+  /* Espaciado sutil entre letras */
+}
+.info-containerd {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 1481px !important;
+  /* Limitar el ancho del texto */
+  margin: 0 auto;
+  /* Centrar el párrafo */
+  letter-spacing: 0.5px;
+  /* Espaciado sutil entre letras */
+}
+
+.info-container::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, rgba(65, 88, 208, 0.1), rgba(255, 204, 112, 0.2));
+  z-index: -1;
+}
+
+.services {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 300px;
+  /* Ajusta según tus necesidades */
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  /* Para el posicionamiento de los elementos internos */
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
+  /* Cambia el color de fondo al hacer hover */
+}
+
+.service-item i {
+  font-size: 48px;
+  /* Tamaño del icono */
+  color: #007BFF;
+  /* Color del icono */
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  margin: 10px 0;
+}
+
+.service-item p {
+  color: #666;
+  /* Color del texto */
+}
+
+.btn {
+  background-color: #007BFF;
+  /* Color del botón */
+  color: white;
+  /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  /* Sin subrayado */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  /* Color del botón al pasar el mouse */
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 16px;
+  /* Tamaño del texto de la calificación */
+}

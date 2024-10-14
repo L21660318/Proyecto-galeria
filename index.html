@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GottoBox</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="nebula"></div>
+    <div>
+        <header id="header">
+            <div class="logo text-center">
+                <span class="logo-icon">📦</span> <!-- Ícono de caja -->
+                <span class="azul">Gotto</span>Box
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="container">
+                    <input class="label-check" id="label-check" type="checkbox">
+                    <label for="label-check" class="hamburger-label">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <nav id="sidebar" class="sidebar hidden">
+            <div class="close-icon" id="close-icon">
+                <button class="toggle">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                </button>
+            </div>
+            <ul>
+                <li><a href="index.html" data-page="inicio">Inicio</a></li>
+                <li><a href="aboutme.html" data-page="aboutme">Sobre mi</a></li>
+                <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+                <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="main-content">
+        <div class="info-container">
+            <h2>Bienvenido a GottoBox</h2>
+            <p>En esta página encontrarás una galería de trabajos realizados por mi. Explora nuestros proyectos y
+                descubre la calidad y creatividad que se ofrece en cada uno de ellos.</p>
+        </div>
+
+        <div class=" info-container info-containerd">
+            <h2 class="color-white text-center">Muestra De La Galeria</h2>
+            <div class="gallery">
+                <div class="card" data-project="Introduccion">
+                    <img src="img/img1.jpg" alt="Introduccion" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Introduccion HTML</p>
+                        <p class="card__description">Este es el hola mundo en html</p>
+                    </div>
+                </div>
+                <div class="card" data-project="btn-aleatorio">
+                    <img src="img/img2.png" alt="btn-aleatorio" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Fondo Aleatorio</p>
+                        <p class="card__description">Por medio de un boton cambiamos el fondo a un color RGB aleatorio
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-project="registro">
+                    <img src="img/img3.png" alt="registro" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Verificacion de registro</p>
+                        <p class="card__description">Verifica si el campo esta vacio y si lo esta manda un mensaje</p>
+                    </div>
+                </div>
+                <div class="card" data-project="Suma">
+                    <img src="img/img4.jpg" alt="Suma" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Suma de dos numeros</p>
+                        <p class="card__description">Se colocan dos numeros y se realiza una suma sencilla</p>
+                    </div>
+                </div>
+                <div class="card" data-project="contador">
+                    <img src="img/img5.png" alt="contador" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Contador</p>
+                        <p class="card__description">Se diseño un contador el cual puede aumentar o disminuir en 1</p>
+                    </div>
+                </div>
+                <div class="card" data-project="img-aleatoria">
+                    <img src="img/img6.jpg" alt="img-aleatoria" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Imagen aleatoria</p>
+                        <p class="card__description">Este codigo cambia de imagen al presionar el boton</p>
+                    </div>
+                </div>
+                <div class="card" data-project="temporizador">
+                    <img src="img/img7.jpg" alt="temporizador" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Temporizador</p>
+                        <p class="card__description">Esto es un temporizador que va de 60 a 0</p>
+                    </div>
+                </div>
+                <div class="card" data-project="tareas">
+                    <img src="img/img8.jpg" alt="tareas" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Lista de tareas</p>
+                        <p class="card__description">En este se crea una lista de tareas que puede eliminar y marcar
+                            como completada</p>
+                    </div>
+                </div>
+                <div class="card" data-project="juego">
+                    <img src="img/img9.jpg" alt="juego" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Piedra, Papel o Tijeras</p>
+                        <p class="card__description">Por este medio realizmaos el juego de piedra papel o tijera con la
+                            maquina</p>
+                    </div>
+                </div>
+                <div class="card" data-project="filtro">
+                    <img src="img/img10.png" alt="filtro" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Filtrar tabla</p>
+                        <p class="card__description">De aqui podemos filtrar elementos de la tabla por su nombre o
+                            numero</p>
+                    </div>
+                </div>
+                <div class="card" data-project="modal">
+                    <img src="img/imagen11.png" alt="modal" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Modal</p>
+                        <p class="card__description">Modal para mostrar una imagen</p>
+                    </div>
+                </div>
+                <div class="card" data-project="calculadoraa">
+                    <img src="img/img12.jpg" alt="calculadoraa" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Calculadora</p>
+                        <p class="card__description">Esta es una calculadora sencilla de suma, resta, multiplicacion y
+                            division.</p>
+                    </div>
+                </div>
+                <div class="card" data-project="convertidor">
+                    <img src="img/img13.webp" alt="convertidor" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Convertidor</p>
+                        <p class="card__description">Convertidor de unidades millas, kilometros y metros</p>
+                    </div>
+                </div>
+                <div class="card" data-project="palabras">
+                    <img src="img/img14.png" alt="palabras" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Contador de palabras</p>
+                        <p class="card__description">Este es un contador de palabras y de caracteres</p>
+                    </div>
+                </div>
+                <div class="card" data-project="cronometro">
+                    <img src="img/img15.png" alt="cronometro" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Cronometro</p>
+                        <p class="card__description">Este es el cronometro el cual puedes reiniciar, pausar y iniciar
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-project="API">
+                    <img src="img/img16.jpg" alt="API" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">API para imagenes</p>
+                        <p class="card__description">Esta pagina tiene un boton que cambia las imagenes de una API</p>
+                    </div>
+                </div>
+                <div class="card" data-project="localstorage">
+                    <img src="img/img17.png" alt="localstorage" class="card__image" />
+                    <div class="card__content">
+                        <p class="card__title">Notas localstorage</p>
+                        <p class="card__description">Esta pagina almacena las notas que agregas de manera local</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <iframe id="modal-iframe" src="" frameborder="0"></iframe> <!-- Agregar un iframe -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/dinamic.js"></script>
+</body>
+
+</html>
